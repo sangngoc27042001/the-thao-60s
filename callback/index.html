@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Thể thao 60s - TikTok authorization</title>
+<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:48px auto;padding:0 16px}code,pre{background:#f3f3f3;padding:8px;display:block;word-break:break-all;white-space:pre-wrap}</style></head>
+<body><h1>Thể thao 60s</h1><p id="msg">Waiting for TikTok authorization response…</p><pre id="out" hidden></pre>
+<script>
+var p=new URLSearchParams(location.search);var m=document.getElementById('msg'),o=document.getElementById('out');
+if(p.get('code')){m.textContent='Authorization received. Copy the line below and send it to the app owner:';o.hidden=false;o.textContent='code='+p.get('code')+'\nstate='+(p.get('state')||'');}
+else if(p.get('error')){m.textContent='Authorization failed: '+p.get('error')+' '+(p.get('error_description')||'');}
+else{m.textContent='This page receives the TikTok authorization response for Thể thao 60s.';}
+</script></body></html>
